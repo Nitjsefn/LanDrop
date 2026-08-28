@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/receive-mail-64.png</file>
+        <file>icons/send-64.png</file>
+    </qresource>
+</RCC>
