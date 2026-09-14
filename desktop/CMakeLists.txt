@@ -26,6 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         startwidget.h startwidget.cpp startwidget.ui
         filechoosewidget.h filechoosewidget.cpp filechoosewidget.ui
         desktop.qrc
+        filestreemodel.h filestreemodel.cpp
 
 
     )

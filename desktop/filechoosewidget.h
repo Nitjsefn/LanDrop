@@ -2,6 +2,9 @@
 #define FILECHOOSEWIDGET_H
 
 #include <QWidget>
+#include <QStandardItemModel>
+
+#include "filestreemodel.h"
 
 namespace Ui {
 class FileChooseWidget;
@@ -20,6 +23,10 @@ private slots:
 
 private:
     Ui::FileChooseWidget *ui;
+    FilesTreeModel filesTreeModel;
+
+    void dragEnterEvent(QDragEnterEvent* ev);
+    void dropEvent(QDropEvent *ev);
 };
 
 #endif // FILECHOOSEWIDGET_H
