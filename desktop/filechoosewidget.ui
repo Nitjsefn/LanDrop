@@ -29,7 +29,7 @@
     <string>Cancel</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="addButton">
+  <widget class="QPushButton" name="addFButton">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>+</string>
+    <string>+F</string>
    </property>
   </widget>
   <widget class="QTreeView" name="treeView">
@@ -79,6 +79,19 @@
    </property>
    <property name="text">
     <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addDButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>10</y>
+     <width>41</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+D</string>
    </property>
   </widget>
  </widget>

@@ -21,6 +21,12 @@ public:
 private slots:
     void on_cancelButton_clicked();
 
+    void on_addFButton_clicked();
+
+    void on_removeButton_clicked();
+
+    void on_addDButton_clicked();
+
 private:
     Ui::FileChooseWidget *ui;
     FilesTreeModel filesTreeModel;

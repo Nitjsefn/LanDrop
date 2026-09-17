@@ -5,6 +5,7 @@
 #include <QDragEnterEvent>
 #include <QMimeData>
 #include <QDropEvent>
+#include <QFileDialog>
 
 FileChooseWidget::FileChooseWidget(QWidget *parent)
     : QWidget(parent)
@@ -39,6 +40,33 @@ void FileChooseWidget::dropEvent(QDropEvent *ev)
         return;
     }
     QString text = ev->mimeData()->text();
-    filesTreeModel.appendFileOrDir(text);
+    filesTreeModel.appendFiles(text);
     qDebug() << text;
 }
+
+void FileChooseWidget::on_addFButton_clicked()
+{
+
+    QList<QUrl> urls = QFileDialog::getOpenFileUrls();
+    filesTreeModel.appendFiles(urls);
+}
+
+
+void FileChooseWidget::on_removeButton_clicked()
+{
+    QModelIndex index = ui->treeView->currentIndex();
+    if(index.isValid() == false)
+    {
+        return;
+    }
+    filesTreeModel.removeItem(index);
+}
+
+
+void FileChooseWidget::on_addDButton_clicked()
+{
+    QUrl url = QFileDialog::getExistingDirectoryUrl();
+    QString path = url.toString();
+    filesTreeModel.appendOneFile(path);
+}
+
