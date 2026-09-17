@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/karol/Dokumenty/c/LanDrop/desktop/net/build",
+  "command": "/usr/bin/c++  -I/home/karol/Dokumenty/c/LanDrop/desktop/net/include -std=gnu++17 -o CMakeFiles/net.dir/src/net.cpp.o -c /home/karol/Dokumenty/c/LanDrop/desktop/net/src/net.cpp",
+  "file": "/home/karol/Dokumenty/c/LanDrop/desktop/net/src/net.cpp",
+  "output": "CMakeFiles/net.dir/src/net.cpp.o"
+}
+]
